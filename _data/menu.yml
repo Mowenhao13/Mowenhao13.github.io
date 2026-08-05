@@ -33,10 +33,15 @@ entries:
         show_more: false
     - title: Research
       url: papers
-      post_list:
-        limit: 3
-        category: papers
-        show_more: false
+      entries:
+      - title: Attention
+        url: papers/Attention/
+      - title: MultiModal
+        url: papers/MultiModal/
+      - title: Multilingual-safety
+        url: papers/Multilingual-safety/
+      - title: Latent Space Reasoning
+        url: papers/Latent_Space_Reasoning/
 
   - title: Archives
     entries: 

@@ -50,6 +50,51 @@ A[使用本仓库作为模板] --> B[选择部署方式] --> C[拉取仓库到�
 
 - 完成以上配置后，推送代码到GitHub，GitHub Actions 会自动构建并发布你的 Jekyll 站点。
 
+### 4. 写文章
+
+**方式一：本地编辑（推荐）**
+
+使用 Obsidian 或其他 Markdown 编辑器，在对应分类的 `_posts` 目录下创建文件：
+
+```
+general/_posts/2026-08-05-文章标题.md
+literature/_posts/2026-08-05-文章标题.md
+```
+
+文件格式：
+```markdown
+---
+title: 文章标题
+tags:
+  - 标签1
+  - 标签2
+---
+
+正文内容，支持 Markdown 语法。
+```
+
+提交后 CI 自动构建部署。
+
+**方式二：网页编辑器**
+
+打开 `https://mowenhao13.github.io/write/`，在浏览器中直接编写和保存文章。
+
+### 5. 研究笔记（papers/）
+
+研究笔记库来自独立的 [Research-wiki](https://git.sysu.edu.cn/Halllo-max/research-wiki) 仓库。同步方式：
+
+```bash
+# 重新运行镜像脚本
+python3 mirror_research.py
+
+# 提交上传
+git add papers/
+git commit -m "sync: update research notes"
+git push origin main
+```
+
+研究笔记使用 `[[wiki-link]]` 格式，镜像脚本会自动转换为标准 Markdown 链接。
+
 <hr id="en"></hr>
 
 [中文](#zh) | **English** | [Wiki](#wiki)
@@ -99,6 +144,49 @@ A[Use this template] --> B[Select deployment source] --> C[Pull repo locally] --
 ### 3. Push commits and deploy
 
 * After completing the above configurations, push the code to GitHub, and GitHub Actions will automatically build and deploy your Jekyll site.
+
+### 4. Writing Posts
+
+**Option A: Local editing (recommended)**
+
+Create a file in the `_posts` directory of the corresponding category using Obsidian or any Markdown editor:
+
+```
+general/_posts/2026-08-05-post-title.md
+literature/_posts/2026-08-05-post-title.md
+```
+
+File format:
+```markdown
+---
+title: Post Title
+tags:
+  - tag1
+  - tag2
+---
+
+Content body, supports Markdown syntax.
+```
+
+CI automatically builds and deploys after pushing.
+
+**Option B: Web editor**
+
+Open `https://mowenhao13.github.io/write/` to write and save articles directly in the browser.
+
+### 5. Research Notes (papers/)
+
+The research notes library comes from the independent [Research-wiki](https://git.sysu.edu.cn/Halllo-max/research-wiki) repository. To sync:
+
+```bash
+# Re-run the mirror script
+python3 mirror_research.py
+
+# Commit and push
+git add papers/
+git commit -m "sync: update research notes"
+git push origin main
+```
 
 <hr id="wiki"></hr>
 

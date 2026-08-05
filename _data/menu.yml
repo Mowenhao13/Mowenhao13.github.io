@@ -32,16 +32,16 @@ entries:
         category: literature
         show_more: false
     - title: Research
-      url: papers
+      url: /papers/
       entries:
       - title: Attention
-        url: papers/Attention/
+        url: /papers/Attention/
       - title: MultiModal
-        url: papers/MultiModal/
+        url: /papers/MultiModal/
       - title: Multilingual-safety
-        url: papers/Multilingual-safety/
+        url: /papers/Multilingual-safety/
       - title: Latent Space Reasoning
-        url: papers/Latent_Space_Reasoning/
+        url: /papers/Latent_Space_Reasoning/
 
   - title: Archives
     entries: 

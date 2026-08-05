@@ -1,0 +1,494 @@
+/* ============================================================
+   write-editor 样式
+   直接适配 less-style-please 主题的颜色方案（不使用 CSS 变量）
+   ============================================================ */
+
+/* --- 编辑器元信息栏 --- */
+
+#editor-toolbar {
+  margin-bottom: 16px;
+}
+
+.editor-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.meta-input {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.meta-input:focus {
+  outline: none;
+  border-color: lightslategray;
+}
+
+.title-input {
+  flex: 3;
+  min-width: 200px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.category-select {
+  flex: 0 0 120px;
+}
+
+.tags-input {
+  flex: 2;
+  min-width: 160px;
+}
+
+/* 暗色模式 */
+@media (prefers-color-scheme: dark) {
+  .meta-input {
+    background: #1c1c1c;
+    color: #ffffff;
+    border-color: #282828;
+  }
+
+  .meta-input:focus {
+    border-color: lightslategray;
+  }
+}
+
+/* --- 按钮 --- */
+
+.editor-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.editor-btn {
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #eeeeee;
+  transition: background 0.15s, color 0.15s;
+}
+
+.editor-btn:hover {
+  background: #f7f7f7;
+}
+
+.editor-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #000000;
+  border-color: #eeeeee;
+}
+
+.btn-danger {
+  background: #c0392b;
+  color: #fff;
+  border-color: #c0392b;
+}
+
+.btn-danger:hover {
+  background: #e74c3c;
+}
+
+/* 暗色模式按钮 */
+@media (prefers-color-scheme: dark) {
+  .editor-btn {
+    background: #1c1c1c;
+    color: #ffffff;
+    border-color: #282828;
+  }
+
+  .editor-btn:hover:not(:disabled) {
+    background: #282828;
+  }
+
+  .btn-primary {
+    background: #ffffff;
+    color: #1c1c1c;
+    border-color: #ffffff;
+  }
+
+  .btn-secondary {
+    background: #1c1c1c;
+    color: #ffffff;
+    border-color: #282828;
+  }
+}
+
+/* --- 编辑器主体 --- */
+
+#editor {
+  margin-bottom: 12px;
+}
+
+/* toast-ui 编辑器的主题适配 - 浅色模式 */
+.toastui-editor-defaultUI {
+  border: 1px solid #eeeeee !important;
+  border-radius: 0 !important;
+}
+
+.toastui-editor-defaultUI-toolbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.toastui-editor-toolbar-icons {
+  background: #ffffff !important;
+}
+
+.toastui-editor-toolbar-icons:hover {
+  background: #f7f7f7 !important;
+}
+
+.toastui-editor-md-splitter {
+  background: #eeeeee !important;
+}
+
+.toastui-editor-md-tab-container {
+  background: #ffffff !important;
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+.toastui-editor-md-tab-item {
+  color: #000000 !important;
+}
+
+.toastui-editor-md-tab-item.active {
+  border-bottom: 2px solid #000000 !important;
+  color: #000000 !important;
+}
+
+.toastui-editor-contents,
+.toastui-editor-md-preview {
+  font-family: inherit !important;
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+.toastui-editor-contents h1,
+.toastui-editor-contents h2,
+.toastui-editor-contents h3,
+.toastui-editor-contents h4 {
+  color: #000000 !important;
+}
+
+.toastui-editor-contents p,
+.toastui-editor-md-preview p {
+  color: #000000 !important;
+}
+
+.toastui-editor-contents a,
+.toastui-editor-md-preview a {
+  color: lightslategray !important;
+}
+
+/* Code blocks in editor - 浅色模式 */
+.toastui-editor-contents pre,
+.toastui-editor-contents code {
+  background: aliceblue !important;
+  color: lightcoral !important;
+}
+
+.toastui-editor-md-preview pre,
+.toastui-editor-md-preview code {
+  background: aliceblue !important;
+  color: lightcoral !important;
+}
+
+/* toast-ui 编辑器 - 暗色模式 */
+@media (prefers-color-scheme: dark) {
+  .toastui-editor-defaultUI {
+    border-color: #282828 !important;
+  }
+
+  .toastui-editor-defaultUI-toolbar {
+    background: #1c1c1c !important;
+    border-bottom-color: #282828 !important;
+  }
+
+  .toastui-editor-toolbar-icons {
+    background: #1c1c1c !important;
+  }
+
+  .toastui-editor-toolbar-icons:hover {
+    background: #282828 !important;
+  }
+
+  .toastui-editor-md-splitter {
+    background: #282828 !important;
+  }
+
+  .toastui-editor-md-tab-container {
+    background: #1c1c1c !important;
+    border-bottom-color: #282828 !important;
+  }
+
+  .toastui-editor-md-tab-item {
+    color: #ffffff !important;
+  }
+
+  .toastui-editor-md-tab-item.active {
+    border-bottom-color: #ffffff !important;
+    color: #ffffff !important;
+  }
+
+  .toastui-editor-contents,
+  .toastui-editor-md-preview {
+    color: #ffffff !important;
+    background: #1c1c1c !important;
+  }
+
+  .toastui-editor-contents h1,
+  .toastui-editor-contents h2,
+  .toastui-editor-contents h3,
+  .toastui-editor-contents h4 {
+    color: #ffffff !important;
+  }
+
+  .toastui-editor-contents p,
+  .toastui-editor-md-preview p {
+    color: #ffffff !important;
+  }
+
+  .toastui-editor-contents a,
+  .toastui-editor-md-preview a {
+    color: lightslategray !important;
+  }
+
+  .toastui-editor-contents pre,
+  .toastui-editor-contents code {
+    background: #000000 !important;
+    color: springgreen !important;
+  }
+
+  .toastui-editor-md-preview pre,
+  .toastui-editor-md-preview code {
+    background: #000000 !important;
+    color: springgreen !important;
+  }
+}
+
+/* --- 状态栏 --- */
+
+.save-status {
+  margin-top: 8px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  transition: opacity 0.3s;
+}
+
+.save-status.hidden {
+  display: none;
+}
+
+.save-status.visible {
+  display: block;
+}
+
+.status-success {
+  background: #27ae6020;
+  border: 1px solid #27ae60;
+  color: #000000;
+}
+
+.status-error {
+  background: #c0392b20;
+  border: 1px solid #c0392b;
+  color: #000000;
+}
+
+.status-loading {
+  background: #f7f7f7;
+  border: 1px solid #eeeeee;
+  color: #000000;
+}
+
+.status-info {
+  background: #f7f7f7;
+  border: 1px solid #eeeeee;
+  color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  .status-success,
+  .status-error {
+    color: #ffffff;
+  }
+
+  .status-loading,
+  .status-info {
+    background: #282828;
+    border-color: #101010;
+    color: #ffffff;
+  }
+}
+
+.save-status a {
+  color: lightslategray;
+  text-decoration: underline;
+}
+
+/* --- 模态框 --- */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.2s;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 24px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  .modal-content {
+    background: #1c1c1c;
+    border-color: #282828;
+  }
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.modal-content p {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.pat-help {
+  font-size: 0.85rem !important;
+  opacity: 0.8;
+  color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pat-help {
+    color: #ffffff;
+  }
+}
+
+.pat-help code {
+  background: #f7f7f7;
+  padding: 1px 4px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.85rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pat-help code {
+    background: #282828;
+  }
+}
+
+.pat-input {
+  width: 100%;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  color: #000000;
+  box-sizing: border-box;
+  margin: 8px 0;
+}
+
+.pat-input:focus {
+  outline: none;
+  border-color: lightslategray;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pat-input {
+    background: #1c1c1c;
+    color: #ffffff;
+    border-color: #282828;
+  }
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pat-status {
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+
+.pat-success {
+  color: #27ae60;
+}
+
+.pat-error {
+  color: #c0392b;
+}
+
+/* --- 响应式 --- */
+
+@media (max-width: 600px) {
+  .editor-meta {
+    flex-direction: column;
+  }
+
+  .title-input,
+  .tags-input,
+  .category-select {
+    width: 100%;
+    flex: none;
+  }
+
+  #editor {
+    height: 400px;
+  }
+
+  .modal-content {
+    padding: 16px;
+  }
+}

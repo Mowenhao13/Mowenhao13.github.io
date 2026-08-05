@@ -20,17 +20,9 @@ entries:
   - title: Categories
     entries:
     - title: General
-      url: general
-      post_list:
-        limit: 3
-        category: general
-        show_more: false
+      url: /general/
     - title: Literature
-      url: literature
-      post_list:
-        limit: 3
-        category: literature
-        show_more: false
+      url: /literature/
     - title: Research
       url: /papers/
       entries:

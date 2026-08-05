@@ -31,6 +31,12 @@ entries:
         limit: 3
         category: literature
         show_more: false
+    - title: Research
+      url: papers
+      post_list:
+        limit: 3
+        category: papers
+        show_more: false
 
   - title: Archives
     entries: 

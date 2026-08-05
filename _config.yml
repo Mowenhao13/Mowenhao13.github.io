@@ -102,6 +102,12 @@ defaults:
       layout: archive
   -
     scope:
+      path: "papers" # research notes use page layout, not archive
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
       path: "assets"
     values:
       sitemap: false
@@ -136,6 +142,7 @@ exclude:
   - .github
   - LICENSE.txt
   - README.md
+  - mirror_research.py
 
 # plugins
 

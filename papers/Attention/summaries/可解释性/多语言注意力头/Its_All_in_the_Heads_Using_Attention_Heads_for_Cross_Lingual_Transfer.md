@@ -1,6 +1,6 @@
 ---
 layout: page
-title: It's All in the Heads: Using Attention Heads as a Baseline for Cross-Lingual Transfer in Commonsense Reasoning
+title: "It's All in the Heads: Using Attention Heads as a Baseline for Cross-Lingual Transfer in Commonsense Reasoning"
 tags:
   - attention-heads
   - cross-lingual

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pay Better Attention to Attention: Head Selection in Multilingual and Multi-Domain Sequence Modeling
+title: "Pay Better Attention to Attention: Head Selection in Multilingual and Multi-Domain Sequence Modeling"
 tags:
   - multilingual
   - multi-domain

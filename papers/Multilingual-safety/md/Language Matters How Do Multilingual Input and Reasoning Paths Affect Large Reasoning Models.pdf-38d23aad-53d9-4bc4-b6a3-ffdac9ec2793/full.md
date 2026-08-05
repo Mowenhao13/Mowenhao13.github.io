@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Language Matters: How Do Multilingual Input and Reasoning Paths Affect Large Reasoning Models?
+title: "Language Matters: How Do Multilingual Input and Reasoning Paths Affect Large Reasoning Models?"
 ---
 
 # Language Matters: How Do Multilingual Input and Reasoning Paths Affect Large Reasoning Models?

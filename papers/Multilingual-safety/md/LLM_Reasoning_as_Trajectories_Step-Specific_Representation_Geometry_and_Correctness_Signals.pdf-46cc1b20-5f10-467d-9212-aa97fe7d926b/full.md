@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LLM Reasoning as Trajectories: Step-Specific Representation Geometry and Correctness Signals
+title: "LLM Reasoning as Trajectories: Step-Specific Representation Geometry and Correctness Signals"
 ---
 
 # LLM Reasoning as Trajectories: Step-Specific Representation Geometry and Correctness Signals

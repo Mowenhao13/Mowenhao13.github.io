@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Indic-TunedLens: Interpreting Multilingual Models in Indian Languages
+title: "Indic-TunedLens: Interpreting Multilingual Models in Indian Languages"
 tags:
   - multilingual
   - interpretability

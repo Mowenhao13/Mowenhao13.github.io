@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection
+title: "Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection"
 tags:
   - multilingual
   - SAE

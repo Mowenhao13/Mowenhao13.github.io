@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 论文总结：JULI: Jailbreak Large Language Models by Self-Introspection
+title: "论文总结：JULI: Jailbreak Large Language Models by Self-Introspection"
 ---
 
 # 论文总结：JULI: Jailbreak Large Language Models by Self-Introspection

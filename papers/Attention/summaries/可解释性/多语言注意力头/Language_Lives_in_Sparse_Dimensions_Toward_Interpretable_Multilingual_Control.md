@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Language Lives in Sparse Dimensions: Toward Interpretable and Efficient Multilingual Control for Large Language Models
+title: "Language Lives in Sparse Dimensions: Toward Interpretable and Efficient Multilingual Control for Large Language Models"
 tags:
   - multilingual
   - sparse-dimensions

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking
+title: "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking"
 ---
 
 # Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking

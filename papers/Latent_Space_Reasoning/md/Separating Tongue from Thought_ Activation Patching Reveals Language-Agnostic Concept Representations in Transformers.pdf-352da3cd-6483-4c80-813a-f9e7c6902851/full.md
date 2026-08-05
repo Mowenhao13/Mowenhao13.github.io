@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Separating Tongue from Thought: Activation Patching Reveals Language-Agnostic Concept Representations in Transformers
+title: "Separating Tongue from Thought: Activation Patching Reveals Language-Agnostic Concept Representations in Transformers"
 ---
 
 # Separating Tongue from Thought: Activation Patching Reveals Language-Agnostic Concept Representations in Transformers

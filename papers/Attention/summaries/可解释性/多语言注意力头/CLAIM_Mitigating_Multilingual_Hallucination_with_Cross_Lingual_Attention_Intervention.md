@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention
+title: "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention"
 tags:
   - multilingual
   - LVLM

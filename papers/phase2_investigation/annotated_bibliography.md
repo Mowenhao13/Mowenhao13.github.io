@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Annotated Bibliography: Latent Space Reasoning & Attention 机制 in LLM Mechanistic Interpretability
+title: "Annotated Bibliography: Latent Space Reasoning title: Annotated Bibliography: Latent Space Reasoning & Attention 机制 in LLM Mechanistic Interpretability Attention 机制 in LLM Mechanistic Interpretability"
 ---
 
 # Annotated Bibliography: Latent Space Reasoning & Attention 机制 in LLM Mechanistic Interpretability

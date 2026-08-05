@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LangFIR: Discovering Sparse Language-Specific Features from Monolingual Data for Language Steering
+title: "LangFIR: Discovering Sparse Language-Specific Features from Monolingual Data for Language Steering"
 tags:
   - multilingual
   - language-specific

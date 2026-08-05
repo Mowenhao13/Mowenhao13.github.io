@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models
+title: "Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models"
 ---
 
 # Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models

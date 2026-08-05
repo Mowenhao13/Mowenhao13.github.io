@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The Same But Different: Structural Similarities and Differences in Multilingual Language Modeling
+title: "The Same But Different: Structural Similarities and Differences in Multilingual Language Modeling"
 tags:
   - multilingual
   - mechanistic-interpretability

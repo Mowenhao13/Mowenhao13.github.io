@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs
+title: "RomanLens: The Role Of Latent Romanization In Multilinguality In LLMs"
 tags:
   - romanization
   - multilingual

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Getting More from Less: Large Language Models are Good Spontaneous Multilingual Learners
+title: "Getting More from Less: Large Language Models are Good Spontaneous Multilingual Learners"
 tags:
   - multilingual
   - alignment

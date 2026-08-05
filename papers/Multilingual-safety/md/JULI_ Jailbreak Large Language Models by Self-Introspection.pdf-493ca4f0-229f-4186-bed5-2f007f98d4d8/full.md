@@ -1,6 +1,6 @@
 ---
 layout: page
-title: JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation
+title: "JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation"
 ---
 
 # JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation

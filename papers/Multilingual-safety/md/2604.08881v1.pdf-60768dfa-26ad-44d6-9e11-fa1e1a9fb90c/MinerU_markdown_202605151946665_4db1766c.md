@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Precise Shield: Explaining and Aligning VLLM Safety via Neuron-Level Guidance
+title: "Precise Shield: Explaining and Aligning VLLM Safety via Neuron-Level Guidance"
 ---
 
 # Precise Shield: Explaining and Aligning VLLM Safety via Neuron-Level Guidance

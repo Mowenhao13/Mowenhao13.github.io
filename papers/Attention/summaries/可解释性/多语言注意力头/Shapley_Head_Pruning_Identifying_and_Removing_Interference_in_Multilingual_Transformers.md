@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Shapley Head Pruning: Identifying and Removing Interference in Multilingual Transformers
+title: "Shapley Head Pruning: Identifying and Removing Interference in Multilingual Transformers"
 tags:
   - attention-heads
   - pruning

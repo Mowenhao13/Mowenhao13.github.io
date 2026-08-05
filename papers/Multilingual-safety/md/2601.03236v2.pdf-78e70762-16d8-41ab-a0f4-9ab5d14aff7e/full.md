@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MAGMA: A Multi-Graph based Agentic Memory Architecture for AI Agents
+title: "MAGMA: A Multi-Graph based Agentic Memory Architecture for AI Agents"
 ---
 
 # MAGMA: A Multi-Graph based Agentic Memory Architecture for AI Agents

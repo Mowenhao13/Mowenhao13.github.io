@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HyperMem: Hypergraph Memory for Long-Term Conversations
+title: "HyperMem: Hypergraph Memory for Long-Term Conversations"
 ---
 
 # HyperMem: Hypergraph Memory for Long-Term Conversations

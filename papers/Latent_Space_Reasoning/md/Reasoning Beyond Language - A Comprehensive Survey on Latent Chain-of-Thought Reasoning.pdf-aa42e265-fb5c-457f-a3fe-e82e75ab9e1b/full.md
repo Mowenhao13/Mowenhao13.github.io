@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning
+title: "Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning"
 ---
 
 # Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning

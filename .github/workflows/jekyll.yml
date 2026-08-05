@@ -1,37 +1,55 @@
-# This workflow builds and deploys a Jekyll site to GitHub Pages.
-# It always builds from the `master` branch, regardless of which branch was pushed.
-# Triggers: pushes to `master` or `full`.
+# ============================================================
+# Deploy Jekyll site to GitHub Pages
+#
+# 协作工作流说明：
+#   - 推送到 main → 构建 + 部署到 GitHub Pages
+#   - 推送到任意分支 → 仅构建，验证编译通过
+#   - PR（所有分支 → main）→ 构建并上传 artifact（可下载预览），不上线
+#   - 手动触发 → 构建 + 部署
+# ============================================================
 
 name: Deploy Jekyll site to Pages
 
 on:
+  # 推送到任何分支时都触发
   push:
     branches:
-      - master
-  repository_dispatch:
-    types: [build_web]
+      - "**"
+
+  # PR 到 main 时触发（方便协作者预览改动效果）
+  pull_request:
+    branches:
+      - main
+
+  # 允许从 Actions 标签页手动触发
   workflow_dispatch:
 
+# Pages 部署所需权限
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# 同一时刻只允许一个部署在运行
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
+
+  # ============================================================
+  # build - 构建 Jekyll 站点
+  #   - main 推送：正常构建并上传 artifact，等待 deploy
+  #   - 非 main 推送 / PR：仅构建验证，不上传 artifact
+  # ============================================================
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master branch (always)
+      - name: Checkout repository
         uses: actions/checkout@v5
-        with:
-          ref: master
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1 # v1.313.0
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
@@ -46,10 +64,15 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Upload artifact
+      - name: Upload artifact (main branch only)
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v5
 
+  # ============================================================
+  # deploy - 仅 main 分支推送时部署到 GitHub Pages
+  # ============================================================
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

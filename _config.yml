@@ -10,7 +10,7 @@ title: less style, please! # name of the site
 description: > # description of the site (multiple lines allowed)
   A minimalist Jekyll theme with an archival hierarchy and nested lists for writers, poets, and thinkers,
   delivering literature typography with Chinese and Latin webfonts.
-url: https://less-style-please.feeshy.top # the base hostname & protocol for your site
+url: https://Mowenhao13.github.io # the base hostname & protocol for your site
 baseurl: "/" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 # webmaster_verifications: # verify ownership with several search services
 #   google: 1234
